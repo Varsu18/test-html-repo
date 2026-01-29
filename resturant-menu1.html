@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whisk & Warmth</title>
+
+    <!-- Bonus styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3a5b3;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #d8cfc4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #header-img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        nav h2 {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        article {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        article img {
+            width: 200px;
+            border-radius: 6px;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #eee;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <img 
+            id="header-img" 
+            src="images/header_rm.jpg"
+            alt="Cafe food and coffee">
+
+        <h1>Whisk & Warmth</h1>
+
+        <nav>
+            <h2><a href="#menu">Menu</a></h2>
+            <h2><a href="#order-form">Order</a></h2>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Menu</h2>
+
+            <article>
+                <img src="images/gs.jpg" alt="Veg Grilled Sandwich">
+                <h3>Veg Grilled Sandwich</h3>
+                <p>
+                    Crispy grilled sandwich filled with fresh vegetables and cheese.  
+                    <i>Price: ₹250</i>
+                </p>
+            </article>
+
+            <article>
+                <img src="images/pb.jpg" alt="Paneer Rice Bowl">
+                <h3>Paneer Rice Bowl</h3>
+                <p>
+                    Soft paneer cubes served over steamed rice with mild spices.  
+                    <i>Price: ₹200</i>
+                </p>
+            </article>
+
+            <article>
+                <img src="images/cb_rm.jpg" alt="Chocolate Brownie">
+                <h3>Chocolate Brownie</h3>
+                <p>
+                    Warm chocolate brownie with a rich cocoa flavor.  
+                    <i>Price: ₹150</i>
+                </p>
+            </article>
+        </section>
+
+        <!-- Order Form Section -->
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+
+            <form>
+                <!-- Quantity Inputs -->
+                <label for="sandwich">
+                    Veg Grilled Sandwich (₹250):
+                </label>
+                <input type="number" id="sandwich" name="sandwich" min="0">
+                <br><br>
+
+                <label for="paneer">
+                    Paneer Rice Bowl (₹200):
+                </label>
+                <input type="number" id="paneer" name="paneer" min="0">
+                <br><br>
+
+                <label for="brownie">
+                    Chocolate Brownie (₹150):
+                </label>
+                <input type="number" id="brownie" name="brownie" min="0">
+                <br><br>
+
+                <!-- Add-ons -->
+                <p>Add-ons:</p>
+
+                <label>
+                    <input type="checkbox" name="addon" value="extra-cheese">
+                    Extra Cheese (₹30)
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="addon" value="butter">
+                    Extra Butter (₹20)
+                </label><br><br>
+
+                <!-- Dining Preference -->
+                <p>Dining Preference:</p>
+
+                <label>
+                    <input type="radio" name="dining" value="dine-in">
+                    Dine In
+                </label><br>
+
+                <label>
+                    <input type="radio" name="dining" value="takeaway">
+                    Takeaway
+                </label><br><br>
+
+                <!-- Special Requests -->
+                <label for="requests">
+                    Special Requests:
+                </label><br>
+                <textarea id="requests" name="requests" rows="4" cols="40"></textarea>
+                <br><br>
+
+                <!-- Submit -->
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with love by your Kumarivars96189</p>
+    </footer>
+
+</body>
+</html>
